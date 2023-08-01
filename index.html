@@ -1,44 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+
+  <title>Sneakers</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <header class="header-container">
+    <img src="./images/icon-menu.svg" alt="menu">
+    <img src="./images/logo.svg" alt="logo">
+    <nav class="navbar">
+      <ul class="navbar__itemns">
+        <li><a class="navbar__link" href="#">Collections</a></li>
+        <li><a class="navbar__link" href="#">Men</a></li>
+        <li><a class="navbar__link" href="#">Women</a></li>
+        <li><a class="navbar__link" href="#">About</a></li>
+        <li><a class="navbar__link" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!--modal del nav- vista mobile  -->
+    <div class="modal-navbar__background">
+      <nav class="modal-navbar">
+        <img src="./images/icon-close.svg" class="close-icon" alt="close">
+        <ul class="navbar__itemns">
+          <li><a class="modal-navbar__link" href="#">Collections</a></li>
+          <li><a class="modal-navbar__link" href="#">Men</a></li>
+          <li><a class="modal-navbar__link" href="#">Women</a></li>
+          <li><a class="modal-navbar__link" href="#">About</a></li>
+          <li><a class="modal-navbar__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- final modal -->
+    <div class="header__cart-avatar">
+      <img src="./images/icon-cart.svg" alt="cart">
+      <img src="./images/image-avatar.png" alt="avatar">
+    </div>
+  </header>
+  <main class="main-container">
 
-  Collections
-  Men
-  Women
-  About
-  Contact
 
-  Sneaker Company
 
-  Fall Limited Edition Sneakers
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
 
-  $125.00
-  50%
-  $250.00
 
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+    Sneaker Company
+
+    Fall Limited Edition Sneakers
+
+    These low-profile sneakers are your perfect casual wear companion. Featuring a
+    durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+    $125.00
+    50%
+    $250.00
+
+    0
+    Add to cart
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </main>
 </body>
+
 </html>
