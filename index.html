@@ -13,75 +13,131 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
-      font-size: 11px;
+      font-size: 18px;
       text-align: center;
     }
 
     .attribution a {
       color: hsl(228, 45%, 44%);
+      text-decoration: none;
     }
   </style>
 </head>
 
 <body>
-  <header class="header-container">
-    <img src="./images/icon-menu.svg" alt="menu">
-    <img src="./images/logo.svg" alt="logo">
-    <nav class="navbar">
-      <ul class="navbar__itemns">
-        <li><a class="navbar__link" href="#">Collections</a></li>
-        <li><a class="navbar__link" href="#">Men</a></li>
-        <li><a class="navbar__link" href="#">Women</a></li>
-        <li><a class="navbar__link" href="#">About</a></li>
-        <li><a class="navbar__link" href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <!--modal del nav- vista mobile  -->
-    <div class="modal-navbar__background">
-      <nav class="modal-navbar">
-        <img src="./images/icon-close.svg" class="close-icon" alt="close">
-        <ul class="navbar__itemns">
-          <li><a class="modal-navbar__link" href="#">Collections</a></li>
-          <li><a class="modal-navbar__link" href="#">Men</a></li>
-          <li><a class="modal-navbar__link" href="#">Women</a></li>
-          <li><a class="modal-navbar__link" href="#">About</a></li>
-          <li><a class="modal-navbar__link" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <!-- final modal -->
-    <div class="header__cart-avatar">
-      <img src="./images/icon-cart.svg" alt="cart">
-      <img src="./images/image-avatar.png" alt="avatar">
-    </div>
-  </header>
+
   <main class="main-container">
 
+    <header class="header-container">
+      <img src="./images/icon-menu.svg" alt="menu">
+      <img src="./images/logo.svg" alt="logo">
+      <nav class="navbar">
+        <ul class="navbar__itemns">
+          <li><a class="navbar__link" href="#">Collections</a></li>
+          <li><a class="navbar__link" href="#">Men</a></li>
+          <li><a class="navbar__link" href="#">Women</a></li>
+          <li><a class="navbar__link" href="#">About</a></li>
+          <li><a class="navbar__link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!--modal del nav- vista mobile  -->
+      <div class="modal-navbar__background">
+        <nav class="modal-navbar">
+          <img src="./images/icon-close.svg" class="close-icon" alt="close">
+          <ul class="navbar__itemns">
+            <li><a class="modal-navbar__link" href="#">Collections</a></li>
+            <li><a class="modal-navbar__link" href="#">Men</a></li>
+            <li><a class="modal-navbar__link" href="#">Women</a></li>
+            <li><a class="modal-navbar__link" href="#">About</a></li>
+            <li><a class="modal-navbar__link" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- final modal -->
+      <div class="header__cart-avatar">
+        <div class="header__cart">
+          <div class="header__cart--notification">3</div>
+          <img src="./images/icon-cart.svg" alt="cart">
+        </div>
+        <img src="./images/image-avatar.png" alt="avatar">
+      </div>
+    </header>
+    <section class="content">
+      <!-- gallery-de images -->
+      <article class="gallery">
+        <div class="gallery__image-container">
+          <img class="gallery__previus" src="./images/icon-previous.svg" alt="previus">
+          <img class="gallery_next" src="./images/icon-next.svg" alt="next">
+        </div>
+        <div class="gallery__thumnails">
+          <img id="1" class="gallery__thumnails" src="./images/image-product-1-thumbnail.jpg" alt="thumnails">
+          <img id="2" class="gallery__thumnails" src="./images/image-product-2-thumbnail.jpg" alt="thumnails">
+          <img id="3" class="gallery__thumnails" src="./images/image-product-3-thumbnail.jpg" alt="thumnails">
+          <img id="4" class="gallery__thumnails" src="./images/image-product-4-thumbnail.jpg" alt="thumnails">
+        </div>
+      </article>
+      <article class="details">
+        <h2 class="details__company">Sneaker Company</h2>
+        <h2 class="details__title">Fall Limited Edition Sneakers</h2>
+        <p class="details__description"> These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="details__prices">
+          <p class="details__now">$125.00 <span class="details__discount">50%</span></p>
+          <p class="details__before"> $250.00</p>
+        </div>
+        <div class="details__product-quantity">
+          <div class="input">
+            <img src="./images/icon-minus.svg" class="input__minus" alt="minus">
+            <input type="number" value="0" class="input__number">
+            <img src="./images/icon-plus.svg" class="input__plus" alt="plus">
+          </div>
+          <button class="details__button"><img src="./images/icon-cart.svg" class="details__button__cart" alt="cart">
+            Add to cart</button>
 
-
-
-
-
-
-    Sneaker Company
-
-    Fall Limited Edition Sneakers
-
-    These low-profile sneakers are your perfect casual wear companion. Featuring a
-    durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-    $125.00
-    50%
-    $250.00
-
-    0
-    Add to cart
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </article>
+    </section>
+    <!-- begin cart modal -->
+    <div class="cart-modal">
+      <p class="cart-modal__title">Cart</p>
+      <div class="cart-modal__checkout-container">
+        <div class="cart-modal__details-container">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="products1">
+          <div>
+            <p class="cart-modal__products">Autumn Limited Edition...</p>
+            <p class="cart-modal__price">$125 x3 <span>$375.00</span></p>
+          </div>
+          <img class="cart-modal__delete" src="./images/icon-delete.svg" alt="delete">
+        </div>
+        <button class="cart-modal__delete">Checkout</button>
+      </div>
     </div>
+    <!-- finish cart modal -->
+
+    <!-- begin modal gallery -->
+    <div class="modal-gallery__background">
+      <article class="modal-gallery">
+        <div class="modal-gallery__image-container">
+          <img class="modal-gallery__previus" src="./images/icon-previous.svg" alt="previus">
+          <img class="modal-gallery_next" src="./images/icon-next.svg" alt="next">
+        </div>
+        <div class="modal-gallery__thumnails">
+          <img id="m1" class="modal-gallery__thumnails" src="./images/image-product-1-thumbnail.jpg" alt="thumnails">
+          <img id="m2" class="modal-gallery__thumnails" src="./images/image-product-2-thumbnail.jpg" alt="thumnails">
+          <img id="m3" class="modal-gallery__thumnails" src="./images/image-product-3-thumbnail.jpg" alt="thumnails">
+          <img id="m4" class="modal-gallery__thumnails" src="./images/image-product-4-thumbnail.jpg" alt="thumnails">
+        </div>
+      </article>
+    </div>
+    <!-- finish modal gallery -->
+
+
+
   </main>
+  <footer class="attribution">
+    Challenge by <a href="www.linkedin.com/in/cristian--sandoval" target="_blank">Full Stack Developer</a>
+    Coded by <a href="www.linkedin.com/in/cristian--sandoval">Cristian Sandoval</a>.
+  </>
 </body>
 
 </html>
