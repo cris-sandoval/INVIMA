@@ -1,0 +1,15 @@
+@use 'initial';
+@use 'variables';
+@use 'header';
+@use 'navbar';
+@use 'modal-navbar';
+/* este es el parchal para crear un scss, modularizado */
+
+.main-container{
+    width: 375px;
+    border: 1px solid rgb(5, 244, 85);
+    margin: auto;
+    @media(min-width: 1115px){
+            width: 1115px; 
+    }
+}

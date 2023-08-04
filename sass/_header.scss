@@ -1,0 +1,53 @@
+@use 'variables';
+
+.header {
+    border: 1px solid rgb(245, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+
+    @media (min-width: 1115px) {
+        height: 112px;
+        border-bottom: 1px solid variables.$Grayish-blue;
+
+    }
+
+    &__navigation {
+        width: 180px;
+        height: 100%;
+        border: 1px solid gold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (min-width:1115px) {
+            width: 590px;
+        }
+    }
+
+    &__menu {
+        &:hover {
+            cursor: pointer;
+        }
+
+        @media (min-width:1115px) {
+            display: none;
+        }
+    }
+
+    &__cart-avatar {
+        border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        width: 70px;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    &__avatar {
+        width: 25px;
+    }
+}
+
