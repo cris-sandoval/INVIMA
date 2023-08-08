@@ -38,16 +38,46 @@
     }
 
     &__cart-avatar {
-        border: 1px solid blue;
+      
         display: flex;
         align-items: center;
         width: 70px;
         height: 100%;
         justify-content: space-between;
+        @media (min-width:1115px) {
+            width: 125px;
+        }
+    }
+
+    &__cart{
+        position: relative;
+        &--notification{
+            background-color: variables.$Orange;
+            width: 15px;
+            height: 18px;
+            border-radius: 16px;
+            position: absolute;
+            top: -11px;
+            right: -6px;
+            text-align: center;
+            color: variables.$White ;
+            font-size: 0.6 rem;
+        }
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     &__avatar {
         width: 25px;
+        @media (min-width:1115px) {
+            width: 48px;
+        }
+        &:hover{
+            cursor: pointer;
+            border: 2px solid variables.$Orange;
+            border-radius: 50px;
+        }
     }
 }
 

@@ -45,23 +45,108 @@ body {
   }
 }
 .header__cart-avatar {
-  border: 1px solid blue;
   display: flex;
   align-items: center;
   width: 70px;
   height: 100%;
   justify-content: space-between;
 }
+@media (min-width: 1115px) {
+  .header__cart-avatar {
+    width: 125px;
+  }
+}
+.header__cart {
+  position: relative;
+}
+.header__cart--notification {
+  background-color: hsl(26, 100%, 55%);
+  width: 15px;
+  height: 18px;
+  border-radius: 16px;
+  position: absolute;
+  top: -11px;
+  right: -6px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.6 rem;
+}
+.header__cart:hover {
+  cursor: pointer;
+}
 .header__avatar {
   width: 25px;
+}
+@media (min-width: 1115px) {
+  .header__avatar {
+    width: 48px;
+  }
+}
+.header__avatar:hover {
+  cursor: pointer;
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50px;
 }
 
 .navbar {
   display: none;
+  border: 1px solid green;
+  width: 400px;
+}
+.navbar__itemns {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__link {
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+  height: 112px;
+  display: block;
+  padding-top: 42px;
+}
+.navbar__link:hover {
+  border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+@media (min-width: 1115px) {
+  .navbar {
+    display: block;
+  }
 }
 
-.modal-navbar__background {
+/* video 3:10 https: */
+.modal-navbar {
+  background-color: hsl(0, 0%, 100%);
+  width: 250px;
+  padding: 28px 24px;
+  height: 100%;
   display: none;
+}
+.modal-navbar__background {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.modal-navbar__itemns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+  margin-top: 50px;
+  list-style: none;
+}
+.modal-navbar__link {
+  text-decoration: none;
+  color: hsl(220, 13%, 13%);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.modal-navbar__close-icon:hover {
+  cursor: pointer;
 }
 
 /* este es el parchal para crear un scss, modularizado */
@@ -69,6 +154,7 @@ body {
   width: 375px;
   border: 1px solid rgb(5, 244, 85);
   margin: auto;
+  position: relative;
 }
 @media (min-width: 1115px) {
   .main-container {
