@@ -114,7 +114,6 @@ body {
   }
 }
 
-/* video 3:10 https: */
 .modal-navbar {
   background-color: hsl(0, 0%, 100%);
   width: 250px;
@@ -146,6 +145,25 @@ body {
   font-weight: 700;
 }
 .modal-navbar__close-icon:hover {
+  cursor: pointer;
+}
+
+.gallery__image-container {
+  background-image: url("../images/image-product-1.jpg");
+  height: 300px;
+  width: 100%;
+  background-position-y: -35px;
+  background-size: cover;
+}
+.gallery__image-container__previus {
+  background-color: hsl(0, 0%, 100%);
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+}
+.gallery__image-container__previus:hover {
   cursor: pointer;
 }
 
