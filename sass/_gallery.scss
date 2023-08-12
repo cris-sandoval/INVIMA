@@ -1,4 +1,6 @@
 @use 'variables';
+@use 'mixins';
+
 .gallery {
 
     &__image-container {
@@ -7,19 +9,18 @@
         width: 100%;
         background-position-y: -35px;
         background-size: cover;
-
+    }
+    &__previus{
+        @include mixins.image-btn(170px,140px);
         
-
-    &__previus {
-        background-color: variables.$White;
-        width: 40px;
-        height: 40px;
-        padding: 12px;
-        border-radius: 50%;
-        position: absolute;
-        &:hover {
-            cursor: pointer;
+    }
+    &__next{
+        @include mixins.image-btn(170px,320px);
+     }
+     &__thumnails{
+        display: none;
+        @media (min-width: 1115px) {
+            display: block;
         }
-    }
-    }
+     }
 }

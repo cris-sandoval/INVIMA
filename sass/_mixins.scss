@@ -10,3 +10,16 @@
     display: none;
 
 }
+@mixin image-btn($top, $left){
+    background-color: variables.$White;
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+        border-radius: 50%;
+        position: absolute;
+        top: $top;
+        left: $left;
+        &:hover{
+            cursor: pointer;
+        }
+}
