@@ -11,7 +11,7 @@
         background-size: cover;
     }
     &__previus{
-        @include mixins.image-btn(170px,140px);
+        @include mixins.image-btn(170px,10px);
         
     }
     &__next{
