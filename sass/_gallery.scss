@@ -12,12 +12,12 @@
     }
 
     &__previus {
-        @include mixins.image-btn(170px, 10px);
+        @include mixins.image-btn(170px, 10px, false);
 
     }
 
     &__next {
-        @include mixins.image-btn(170px, 320px);
+        @include mixins.image-btn(170px, 320px, false);
     }
 
     &__thumnails {

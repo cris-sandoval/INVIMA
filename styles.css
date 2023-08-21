@@ -121,16 +121,6 @@ body {
   height: 100%;
   display: block;
 }
-.modal-navbar__background {
-  background-color: hsla(0, 0%, 0%, 0.5);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: none;
-}
 .modal-navbar__itemns {
   display: flex;
   flex-direction: column;
@@ -147,6 +137,11 @@ body {
 }
 .modal-navbar__close-icon:hover {
   cursor: pointer;
+}
+@media (min-width: 1115px) {
+  .modal-navbar {
+    display: none;
+  }
 }
 
 .gallery__image-container {
@@ -401,6 +396,56 @@ body {
 }
 .cart-modal__checkout:hover {
   cursor: pointer;
+}
+
+.modal-gallery {
+  width: 446px;
+}
+.modal-gallery__background {
+  background-color: hsla(0, 0%, 0%, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.modal-gallery__image-container {
+  background-image: url("../images/image-product-1.jpg");
+  height: 446px;
+  background-size: cover;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.modal-gallery__thumnails {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-gallery__thumnail {
+  width: 90px;
+  border-radius: 16px;
+}
+.modal-gallery__thumnail:hover {
+  cursor: pointer;
+  border: 2px solid hsl(26, 100%, 55%);
+}
+.modal-gallery__previus {
+  background-color: hsl(0, 0%, 100%);
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+.modal-gallery__previus:hover {
+  cursor: pointer;
+}
+@media (min-width: 1115px) {
+  .modal-gallery__previus {
+    display: block;
+  }
 }
 
 /* este es el parchal para crear un scss, modularizado */

@@ -3,7 +3,7 @@
 
 .modal-navbar{
     &__background{
-        @include mixins.modal-background
+        // @include mixins.modal-background
     }
     background-color: variables.$White;
     width: 250px;
@@ -30,5 +30,9 @@
     &__close-icon:hover{
         cursor: pointer;
     }
+    @media (min-width: 1115px) {
+        display: none;
+    }
+   
 
 }

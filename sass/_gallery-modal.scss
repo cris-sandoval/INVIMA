@@ -1,0 +1,34 @@
+@use 'variables' as v;
+@use 'mixins';
+
+.modal-gallery{
+    
+    width: 446px;
+    &__background{
+        @include mixins.modal-background;
+    }
+    &__image-container{
+        background-image: url('../images/image-product-1.jpg');
+        height: 446px;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 16px;
+    }
+    &__thumnails {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+
+    }
+    &__previus{
+        @include mixins.image-btn(10px,0px, true)
+    }
+}
