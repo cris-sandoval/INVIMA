@@ -169,6 +169,11 @@ body {
 .gallery__previus:hover {
   cursor: pointer;
 }
+@media (min-width: 1115px) {
+  .gallery__previus {
+    display: none;
+  }
+}
 .gallery__next {
   background-color: hsl(0, 0%, 100%);
   width: 40px;
@@ -182,22 +187,41 @@ body {
 .gallery__next:hover {
   cursor: pointer;
 }
+@media (min-width: 1115px) {
+  .gallery__next {
+    display: none;
+  }
+}
 .gallery__thumnails {
   display: none;
 }
 @media (min-width: 1115px) {
   .gallery__thumnails {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
+}
+.gallery__thumnail {
+  width: 90px;
+  border-radius: 16px;
+}
+.gallery__thumnail:hover {
+  cursor: pointer;
+  border: 2px solid hsl(26, 100%, 55%);
 }
 @media (min-width: 1115px) {
   .gallery {
     width: 446px;
   }
+  .gallery__image-container {
+    border-radius: 16px;
+    height: 446px;
+    margin-bottom: 32px;
+    background-position-y: 0px;
+  }
 }
 
 .details {
-  border: 1px solid red;
   padding: 24px;
 }
 .details__company {

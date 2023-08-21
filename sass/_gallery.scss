@@ -1,4 +1,4 @@
-@use 'variables';
+@use 'variables' as v;
 @use 'mixins';
 
 .gallery {
@@ -10,20 +10,43 @@
         background-position-y: -35px;
         background-size: cover;
     }
-    &__previus{
-        @include mixins.image-btn(170px,10px);
-        
+
+    &__previus {
+        @include mixins.image-btn(170px, 10px);
+
     }
-    &__next{
-        @include mixins.image-btn(170px,320px);
-     }
-     &__thumnails{
+
+    &__next {
+        @include mixins.image-btn(170px, 320px);
+    }
+
+    &__thumnails {
         display: none;
+
         @media (min-width: 1115px) {
-            display: block;
+            display: flex;
+            justify-content: space-between;
         }
-     }
-     @media (min-width: 1115px) {
+    }
+
+    &__thumnail{
+        width: 90px;
+        border-radius: 16px;
+        &:hover{
+            cursor: pointer;
+            border: 2px solid v.$Orange;
+        }
+
+    }
+
+    @media (min-width: 1115px) {
         width: 446px;
+
+        &__image-container {
+            border-radius: 16px;
+            height: 446px;
+            margin-bottom: 32px;
+            background-position-y: 0px;
+        }
     }
 }
