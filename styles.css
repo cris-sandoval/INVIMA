@@ -58,6 +58,7 @@ body {
   position: relative;
 }
 .header__cart--notification {
+  display: none;
   background-color: hsl(26, 100%, 55%);
   width: 15px;
   height: 18px;
@@ -508,6 +509,16 @@ body {
     padding: 90px 50px;
     gap: 124px;
   }
+}
+
+.show {
+  display: block;
+}
+
+.empty {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
