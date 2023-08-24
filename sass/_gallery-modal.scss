@@ -7,7 +7,7 @@
     // display: none;
     &__background {
         @include mixins.modal-background;
-        display: grid;
+        // display: grid;
         place-content: center;
         display: none;
     }
@@ -42,8 +42,6 @@
     &__thumnail {
         width: 90px;
         border-radius: 16px;
-
-
         &:hover {
             cursor: pointer;
             border: 2px solid v.$Orange;
