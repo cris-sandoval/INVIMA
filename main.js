@@ -45,7 +45,9 @@ let priceModal = document.querySelector('.cart-modal__price')
 cartBtn.addEventListener('click', () => {
     cartModal.classList.toggle('show');
     if (lastNumber == 0) {
-        drawProductModal();
+        productContainer.innerHTML = '<p class="empty" > Your cart is empty </p>';
+    }else{
+        drawProductModal()
     }
 })
 
