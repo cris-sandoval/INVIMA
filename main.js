@@ -83,7 +83,9 @@ const closeModalGallery = document.querySelector('.modal-gallery__close')
 
 
 imageContainer.addEventListener('click', () => {
-    modalImgGallery.style.display = 'grid';
+    if (window.innerWidth > 1115) { // Cambia 1115 al ancho deseado para mostrar el modal
+        modalImgGallery.style.display = 'grid';
+    }
 })
 
 closeModalGallery.addEventListener('click', () => {

@@ -2,13 +2,15 @@
 @use 'mixins';
 
 .details{
-    padding: 24px;
+    padding: 10px;
+    // border: 1px solid rgb(5, 244, 85);
+
     &__company{
         color: v.$Orange;
         text-transform: uppercase;
         font-size: 0.8em;
         letter-spacing: 1px;
-        margin-bottom: 12px;
+        margin-bottom: 1px;
     }
     &__title{
         font-size: 1.7em;
@@ -54,11 +56,11 @@
         gap: 32px;
     }
     @media (min-width: 1115px) {
-        padding-top: 60px;
+        padding-top: 40px;
         width: 446px;
         &__title{
             font-size: 2.7em;
-            margin-bottom: 48px;
+            margin-bottom: 38px;
         }
         &__description{
             font-size: 0.9em;

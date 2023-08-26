@@ -1,5 +1,5 @@
 @use 'initial';
-@use 'variables';
+@use 'variables' as v;
 @use 'header';
 @use 'navbar';
 @use 'modal-navbar';
@@ -17,18 +17,47 @@
     margin: auto;
     position: relative;
     @media(min-width: 1115px){
-            width: 1115px; 
+            width: 1115px;
+            height: 100vh;
+           
     }
 }
 .content{
     @media (min-width: 1115px) {
         display: flex;
-        padding: 90px 50px;
+        padding: 25px 50px;
         gap: 124px;
+        // border: 1px solid red; 
+        
     }
 }
 .show{
     display: block;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    &__full-S{
+        margin: 0 5px;
+        text-decoration: none;
+        font-weight: 600;
+        color: black;
+        cursor: pointer;
+        &:hover{
+            color: v.$Orange;
+        }
+    }
+    &__full-N{
+        margin: 0 5px;
+        text-decoration: none;
+        font-weight: 600;
+        color: v.$Orange;
+        cursor: pointer;
+        &:hover{
+            color: black;
+        }
+    }
 }
 
 .empty{

@@ -2,13 +2,15 @@
 @use 'mixins';
 
 .gallery {
-
+    //  border: 1px solid rgb(5, 244, 85);
     &__image-container {
         background-image: url('../images/image-product-1.jpg');
         height: 300px;
         width: 100%;
         background-position-y: -35px;
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center
     }
 
     &__previus {
@@ -44,7 +46,7 @@
 
         &__image-container {
             border-radius: 16px;
-            height: 446px;
+            height: 326px;
             margin-bottom: 32px;
             background-position-y: 0px;
         }
